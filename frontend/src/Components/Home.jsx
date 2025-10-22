@@ -40,8 +40,9 @@ const Home = ({ products, addToCart }) => {
                 className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-opacity-20 transition duration-300 cursor-pointer transform hover:scale-105"
               >
                 <div className="text-3xl mb-3">📱</div>
-                <h3 className="text-xl font-semibold text-white">{category}</h3>
-                <p className="text-white text-opacity-80 mt-2">Explore products</p>
+                {/* <div className="text-3xl mb-3">{category}</div> */}
+                <h3 className="text-xl font-semibold text-blue-600">{category}</h3>
+                <p className=" text-blue-400 text-opacity-80 mt-2">Explore products</p>
               </div>
             ))}
           </div>
