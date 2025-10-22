@@ -19,7 +19,7 @@ const Cart = ({ cart, updateQuantity, removeFromCart, clearCart, totalAmount }) 
     
     // If it starts with /uploads, add the server URL
     if (image.startsWith('/uploads')) {
-      return `http://localhost:8080${image}`;
+      return `https://dhasu-mart.onrender.com/${image}`;
     }
     
     // Fallback to placeholder

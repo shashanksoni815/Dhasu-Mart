@@ -11,6 +11,8 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import AdminPanel from './Components/AdminPanel';
 import ProductDetail from './Components/ProductDetail';
+import About from './Components/About';
+import Contact from './Components/Contact';
 
 const AppContent = () => {
   const [cart, setCart] = useState({ items: [] });
@@ -128,6 +130,8 @@ const AppContent = () => {
             totalAmount={getTotalAmount()}
           />
         } />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
         <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />
         <Route path="/admin" element={user?.role === 'admin' ? <AdminPanel products={products} fetchProducts={fetchProducts} /> : <Navigate to="/" />} />

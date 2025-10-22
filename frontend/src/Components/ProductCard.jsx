@@ -21,11 +21,11 @@ const ProductCard = ({ product, addToCart }) => {
     }
 
     if (image.startsWith('/uploads')) {
-      return `http://localhost:8080${image}`;
+      return `https://dhasu-mart.onrender.com/${image}`;
     }
 
     // Otherwise assume it's just a filename
-    return `http://localhost:8080/uploads/${image}`;
+    return `https://dhasu-mart.onrender.com/uploads/${image}`;
   };
 
   const imageUrl = getImageUrl(product.image);
@@ -145,7 +145,7 @@ export default ProductCard;
     
 //     // If it starts with /uploads, add the server URL
 //     if (product.image?.startsWith('/uploads')) {
-//       return `http://localhost:8080${product.image}`;
+//       return `https://dhasu-mart.onrender.com/${product.image}`;
 //     }
     
 //     // If it's just a filename, construct the URL

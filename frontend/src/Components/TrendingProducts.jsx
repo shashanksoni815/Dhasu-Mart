@@ -48,7 +48,7 @@ const TrendingProducts = ({ products, addToCart }) => {
                 // ... in the product card section
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-bold text-gray-800">
-                    ${product.price}
+                    ₹{product.price}
                   </span>
                   <div className="flex space-x-2">
                     <Link 

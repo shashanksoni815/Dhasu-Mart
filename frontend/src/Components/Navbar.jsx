@@ -16,6 +16,8 @@ const Navbar = ({ cartItemCount }) => {
           <div className="hidden md:flex space-x-8">
             <Link to="/" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Home</Link>
             <Link to="/products" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Products</Link>
+            <Link to="/about" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">About</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Contact</Link>
             <Link to="/cart" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 flex items-center">
               Cart 
               {cartItemCount > 0 && (
